@@ -1,5 +1,7 @@
-[![Kirbycasts](https://nhoffmann.com/assets/github/kirbycasts.jpg)](https://youtube.com/kirbycasts)
+[<img src="http://getkirby.com/assets/images/github/kirbycasts.jpg" width="300">](https://youtube.com/kirbycasts)
 
+
+**Kirby: the CMS that adapts to any project, loved by developers and editors alike.**  
 In this repo, we share code snippets and examples from [our screencasts on Youtube](https://youtube.com/kirbycasts).
 
 ## What's Kirby?
@@ -9,3 +11,5 @@ In this repo, we share code snippets and examples from [our screencasts on Youtu
 - **[Feedback](https://feedback.getkirby.com)** – You have an idea for Kirby? Share it.
 - **[Forum](https://forum.getkirby.com)** – The place for questions and support. Whenever you get stuck, don't hesitate to reach out.
 - **[Discord](https://chat.getkirby.com)** – Hang out and meet the community.
+- **[Twitter](https://twitter.com/getkirby)** – Spread the word.
+- **[Instagram](https://www.instagram.com/getkirby/)** – Share your creations: #madewithkirby.
