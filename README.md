@@ -4,6 +4,8 @@
 **Kirby: the CMS that adapts to any project, loved by developers and editors alike.**  
 In this repo, we share code snippets and examples from [our screencasts on Youtube](https://youtube.com/kirbycasts).
 
+You can learn more about Kirby at [getkirby.com](https://getkirby.com).
+
 ## What's Kirby?
 - **[getkirby.com](https://getkirby.com)** – Get to know the CMS.
 - **[Try it](https://getkirby.com/try)** – Take a test ride with our online demo. Or download one of our kits to get started.
