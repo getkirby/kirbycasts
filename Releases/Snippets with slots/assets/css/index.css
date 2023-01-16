@@ -1,0 +1,144 @@
+@import url("./defaults.css");
+@import url("./headings.css");
+@import url("./margins.css");
+@import url("./codeblock.css");
+@import url("./button.css");
+
+:root {
+  --container: 77.50rem;
+
+  --gap--2: clamp(0.50rem, calc(0.14rem + 1.82vw), 1.25rem);
+  --gap--1: clamp(0.75rem, calc(0.29rem + 2.28vw), 1.88rem);
+  --gap-0: clamp(1.00rem, calc(0.48rem + 2.61vw), 2.50rem);
+  --gap-1: clamp(1.50rem, calc(0.89rem + 3.05vw), 3.75rem);
+  --gap-2: clamp(2.00rem, calc(1.33rem + 3.33vw), 5.00rem);
+
+	/** Element heights **/
+	--height: var(--spacing-8);
+}
+
+body {
+  max-width: var(--container);
+  padding-inline: var(--gap-0);
+  margin-inline: auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--font-size--1);
+  padding-block: var(--gap-0);
+  row-gap: var(--spacing-3);
+  column-gap: var(--spacing-12);
+}
+
+.logo {
+  padding-block: .25rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.menu {
+  display: flex;
+  gap: var(--gap--2);
+}
+.menu a {
+  padding-block: .25rem;
+  border-bottom: 2px solid transparent;
+}
+.menu a[aria-current] {
+  border-bottom-color: var(--color-black);
+}
+
+.main {
+  padding-block: var(--gap-0);
+  min-height: calc(100vh - var(--spacing-24));
+  margin-bottom: var(--spacing-24);
+}
+
+.columns {
+  --columns: 1;
+  --gap: var(--gap-2);
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  gap: var(--gap);
+}
+
+.columns > * {
+  --span: 1;
+  grid-column: span var(--span);
+}
+
+.text {
+  line-height: 1.5;
+}
+.text * + * {
+	margin-top: var(--spacing-6);
+}
+
+.figure {
+  position: relative;
+  aspect-ratio: var(--ratio, 1/1);
+  box-shadow: rgba(0,0,0, .2) 0 5px 40px;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+.figure:not(:has(img)) {
+  background: #efefef;
+  box-shadow: none;
+}
+.figure :where(img, iframe) {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  padding-block: var(--gap-0);
+  font-size: var(--font-size--2);
+}
+
+.card {
+  background: #efefef;
+  padding: var(--spacing-6);
+  border-radius: .5rem;
+  margin-bottom: var(--spacing-12);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--gap-0);
+}
+.card .figure {
+  border-radius: .25rem;
+}
+.card figcaption {
+  line-height: 1.5em;
+}
+
+.codeblock {
+	margin-bottom: var(--spacing-12);
+}
+
+.h1 {
+	margin-bottom: var(--spacing-12);
+}
+
+.field {
+	margin-bottom: var(--spacing-6);
+}
+.field label {
+	display: block;
+	margin-bottom: var(--spacing-3);
+}
+.field :where(input, textarea) {
+	background: #efefef;
+	border-radius: .25rem;
+	padding: .5rem;
+}
+.field textarea {
+	min-height: 12rem;
+}
+
+@import url("./utilities.css");

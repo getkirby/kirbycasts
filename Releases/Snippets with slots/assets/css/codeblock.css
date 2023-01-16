@@ -1,0 +1,22 @@
+.codeblock {
+  position: relative;
+  display: block;
+  font-family: var(--font-family-mono);
+  max-width: 100%;
+  padding: var(--spacing-6);
+  border-radius: .5rem;
+  background: var(--color-black);
+  color: #efefef;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  line-height: 1.5;
+  tab-size: 1.5rem;
+}
+.codeblock::before {
+  position: absolute;
+  content: attr(data-lang);
+  right: .5rem;
+  top: .5rem;
+  font-size: .625rem;
+}
